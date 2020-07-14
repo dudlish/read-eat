@@ -15,13 +15,13 @@
 <body>
     <!-- Navbar: Logo + Menu buttons -->
     <header class="width-container">
-        <div class="navbar">
+        <div class="re-navbar">
             <!-- Website Logo -->
             <h1 id="brand" class="main-color">Read Eat</h1>
-            <nav class="navbar-menu">
+            <nav class="re-navbar-menu">
                 <!-- Navbar Menu -->
                 <ul>
-                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a class="menu-active" href="#home">Home</a></li>
                     <li><a href="#books">Books</a></li>
                     <li>
                         <div class="dropdown-container">
@@ -46,7 +46,7 @@
         <section class="intro">
             <h2>Your favorite book on a plate</h2>
             <p>Prepare the dishes enjoyed by the characters in the books</p>
-            <a href="#about" class="btn">Read More</a>
+            <a href="#about" class="btn-green">Read More</a>
         </section>
 
 
@@ -55,28 +55,28 @@
             <div class="recipe-container">
                 <h2>Today Editor's Choice</h2>
                 <p>Pippi Longstocking by Astrid Lindgren</p>
-                <h3>Peaches-and-Cream Pancakes Recipe</h3>
-                <div class="category category-dessert">Dessert</div>
+                <h3>Peaches-and-Cream Pancakes</h3>
+                <div class="recipe-category category-dessert">Dessert</div>
                 <p class="quote">“And they shouted with delight when they saw all the good things Pippi had set out
                     on the bare rock. There were lovely little sandwiches of meatloaf and ham, a whole pile of
                     pancakes sprinkled with sugar, little brown sausages, and three pineapple puddings.”</p>
             </div>
 
             <!-- Images used to open the lightbox -->
-            <div class="row">
-                <div class="column">
+            <div class="lightbox-row">
+                <div class="lightbox-column">
                     <img src="img/books/A.Lindgren_Pippi/book.jpg" onclick="openModal();currentSlide(1)"
                         class="hover-shadow">
                 </div>
-                <div class="column">
+                <div class="lightbox-column">
                     <img src="img/books/A.Lindgren_Pippi/dish.jpg" onclick="openModal();currentSlide(2)"
                         class="hover-shadow">
                 </div>
-                <div class="column">
+                <div class="lightbox-column">
                     <img src="img/books/A.Lindgren_Pippi/ingredient1.jpg" onclick="openModal();currentSlide(3)"
                         class="hover-shadow">
                 </div>
-                <div class="column">
+                <div class="lightbox-column">
                     <img src="img/books/A.Lindgren_Pippi/ingredient2.jpg" onclick="openModal();currentSlide(4)"
                         class="hover-shadow">
                 </div>
@@ -117,22 +117,22 @@
                     </div>
 
                     <!-- Thumbnail image controls -->
-                    <div class="column">
+                    <div class="lightbox-column">
                         <img class="demo" src="img/books/A.Lindgren_Pippi/book.jpg" onclick="currentSlide(1)"
                             alt="Pippi Longstocking by Astrid Lindgren">
                     </div>
 
-                    <div class="column">
+                    <div class="lightbox-column">
                         <img class="demo" src="img/books/A.Lindgren_Pippi/dish.jpg" onclick="currentSlide(2)"
                             alt="Peaches-and-Cream Pancakes Recipe">
                     </div>
 
-                    <div class="column">
+                    <div class="lightbox-column">
                         <img class="demo" src="img/books/A.Lindgren_Pippi/ingredient1.jpg" onclick="currentSlide(3)"
                             alt="Peaches-and-Cream Pancakes Recipe">
                     </div>
 
-                    <div class="column">
+                    <div class="lightbox-column">
                         <img class="demo" src="img/books/A.Lindgren_Pippi/ingredient2.jpg" onclick="currentSlide(4)"
                             alt="Peaches-and-Cream Pancakes Recipe">
                     </div>
@@ -140,7 +140,7 @@
             </div>
 
             <div class="flex">
-                <a href="books.html" class="btn btn-center">Open Recipe</a>
+                <a href="books.html" class="btn-green btn-center">Open Recipe</a>
             </div>
         </section>
         <hr class="dotted">

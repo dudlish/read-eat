@@ -1,15 +1,15 @@
-.row > .column {
+.lightbox-row > .lightbox-column {
     padding: 0 4px;
   }
   
-  .row:after {
+  .lightbox-row:after {
     content: "";
     display: table;
     clear: both;
   }
   
   /* Create four equal columns that floats next to eachother */
-  .column {
+  .lightbox-column {
     float: left;
     width: 25%;
   }

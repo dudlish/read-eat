@@ -10,7 +10,7 @@
     --max-width: 1200px;
 }
 
-.category {
+.recipe-category {
     --snack-color: #d9d4e7;
     --mainCourse-color: #a66bbe;
     /* #a786df */
@@ -68,14 +68,14 @@ hr.dotted {
 }
 
 /* Utilities */
-.container {
+.width-container {
     max-width: var(--max-width);
     margin: auto;
     padding: 0 2rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-.btn {
+.btn-green {
     margin-top: 20px;
     cursor: pointer;
     display: inline-block;
@@ -131,7 +131,7 @@ font-style: italic;
 font-size: 0.9rem;
 }
 
-.category {
+.recipe-category {
     display: inline-block;
     color: #fff;
     font-size: .55rem;
@@ -155,7 +155,7 @@ font-size: 0.9rem;
 }
 
 /* Navbar */
-.navbar {
+.re-navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;  
@@ -169,24 +169,24 @@ font-size: 0.9rem;
     padding: 0 30px;
   }
 
-.navbar-menu ul {
+.re-navbar-menu ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.navbar a {
+.re-navbar a {
     font-size: 1.2rem;
     color: var(--second-color);
     padding: 25px 20px;
     margin: 0 5px;
 }
 
-.navbar a:hover {
+.re-navbar a:hover {
     background-color: var(--active-color);
 }
 
-.navbar a.active {
+.re-navbar a.menu-active {
     font-weight: bold;
     background: var(--active-color);
     border-radius: 5px;
@@ -279,7 +279,7 @@ font-size: 0.9rem;
     display:block;
 }
 
-.books .row img {
+.books .lightbox-row img {
   width: 100%;
 }
 
