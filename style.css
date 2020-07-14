@@ -55,6 +55,11 @@ p {
     margin: 5px 0;
 }
 
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 
 hr.dotted {
     border-top: 3px dotted #bbb;
@@ -180,6 +185,7 @@ font-size: 0.9rem;
     color: var(--second-color);
     padding: 25px 20px;
     margin: 0 5px;
+    height: 100%;
 }
 
 .re-navbar a:hover {
