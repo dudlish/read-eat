@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-/* Colors */
+/* Colors & Other Variables */
 :root {
     --main-color: #75c7bf;
     --back-color: #faeee7;
     --second-color: #737373;
     --active-color: #ddd;
-  }
+    --max-width: 1200px;
+}
 
+.category {
+    --snack-color: #d9d4e7;
+    --mainCourse-color: #a66bbe;
+    /* #a786df */
+    --dessert-color: #fec7d7;
+}
 
+/* Main Elements' Styles */
 * {
     margin: 0;
     padding: 0;
@@ -23,13 +31,15 @@ body {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 100;
+    margin: 5px 0;
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-weight: 100;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5px 0;
 }
 
 ul {
@@ -42,7 +52,7 @@ a {
 }
 
 p {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 
@@ -55,6 +65,93 @@ hr.dotted {
 .main-color {
     color: var(--main-color);
     font-weight: 800;
+}
+
+/* Utilities */
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.btn {
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: var(--back-color);
+    background: var(--main-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .section-header {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+} */
+
+.section-header  h3 {
+    /* font-size: 40px; */
+    /* margin: 20px 0; */
+}
+
+.section-padding {
+    padding: 20px 20px 10px;
+}
+
+/* Recipe Heading Container */
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.1rem;    
+}
+
+.recipe-container > * {
+    /* background: pink; */
+}
+
+.recipe-container > *:first-child,
+.recipe-container > *:last-child {
+    grid-column: 1 / span 3;
+}
+
+.recipe-container > .quote {
+font-style: italic;
+font-size: 0.9rem;
+}
+
+.category {
+    display: inline-block;
+    color: #fff;
+    font-size: .55rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    max-width: fit-content;
+}
+
+.category-snack {
+    background: var(--snack-color);
+}
+
+.category-mainCourse {
+    background: var(--mainCourse-color);
+}
+
+.category-dessert {
+    background: var(--dessert-color);
 }
 
 /* Navbar */
@@ -71,6 +168,12 @@ hr.dotted {
     top: 0px;
     padding: 0 30px;
   }
+
+.navbar-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .navbar a {
     font-size: 1.2rem;
@@ -97,12 +200,6 @@ hr.dotted {
     border-radius: 50%;
 }
 
-.top-block ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Intro */
 .intro {
     display: flex;
@@ -125,19 +222,12 @@ hr.dotted {
     font-size: 3.5rem;
 }
 
-.intro p {
-    font-size: 1.5rem;
+.intro h2 {
+    font-size: 2.5rem;
 }
 
-.btn {
-    margin-top: 20px;
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px 30px;
-    color: var(--back-color);
-    background: var(--main-color);
-    border: none;
-    border-radius: 5px;
+.intro p {
+    font-size: 1.2rem;
 }
 
 .flex {
@@ -147,35 +237,24 @@ hr.dotted {
     margin-bottom: 10px;
 }
 
-.btn-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Dropdown Menu */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
 }
 
-/* Dropdown Menu */
-/* Dropdown Button */
 .dropbtn {
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
+}
   
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus {
     background: var(--active-color);
+}
   
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+.dropdown-content {
     margin-top: 10px;
     display: none;
     position: absolute;
@@ -183,26 +262,22 @@ hr.dotted {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
-  /* Links inside the dropdown */
-  .dropdown-content a {
+.dropdown-content a {
     padding: 12px 14px;
     margin: 0;
     text-decoration: none;
     display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-      background-color: #ddd
-    }
-  
-  /* Show the dropdown menu */
-  .show {
-      display:block;
-    }
+}
 
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+  
+.show {
+    display:block;
+}
 
 .books .row img {
   width: 100%;
@@ -296,25 +371,6 @@ hr.dotted {
 
 .flex-columns p {
     margin: 20px 0;
-}
-
-Section Header */
-.section-header {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.section-header  h3 {
-    font-size: 40px;
-    margin: 20px 0;
-}
-
-.section-padding {
-    padding: 20px 20px 10px;
 }
 
 /* Footer */

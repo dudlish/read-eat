@@ -38,3 +38,8 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+// let slide = document.querySelectorAll(".mySlides")
+// slide.addEventListener("click", function () {
+//     alert("Hello World");
+// });
