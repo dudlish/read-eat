@@ -205,32 +205,49 @@
                 </div>
             </div>
 
-
-
-            <div class="flex">
-                <a href="books.html" class="btn-green btn-center">Open Recipe</a>
-            </div>
-
-            <!-- Blog -->
-            <!-- <section id="blog" class="blog flex-columns flex-reverse width-container">
-            <div class="row">
-                <div class="column-blog">
-                    <div class="column-1">
-                        <img src="img/blog.jpg" alt="">
+            <hr class="dotted">
+            <h2 class="section-heading container">Share a Recipe</h2>
+            <form class="container white-back">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Full Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
                     </div>
                 </div>
-                <div class="column-blog">
-                    <div class="column-2 bg-secondary">
-                        <h4>June 12 2020</h4>
-                        <h2>Blog Post One</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum id neque ut iure
-                            exercitationem voluptates harum tempore ad eum cum.</p>
-                        <i class="fas fa-chevron"></i>
-                        <a href="blog.html" class="btn btn-outline">Read Our Blog</a>
+                <div class="form-group">
+                    <label for="ingredients">Recipe Ingredients</label>
+                    <input type="text" class="form-control" id="ingredients" placeholder="Ingredients">
+                </div>
+                <div class="form-group">
+                    <label for="preparation">Preparation</label>
+                    <input type="text" class="form-control" id="preparation" placeholder="Preparation">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Meal Type</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Snack</option>
+                            <option>Main Dish</option>
+                            <option>Dessert</option>
+                        </select>
                     </div>
                 </div>
-            </div>
-        </section> -->
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            I agree with your website policy
+                        </label>
+                    </div>
+                </div>
+                <a href="books.html" class="btn-green">Send</a>
+                <!-- <button type="submit" class="btn btn-primary">Send</button> -->
+            </form>
 
     </main>
     <footer class="footer bg-dark">
