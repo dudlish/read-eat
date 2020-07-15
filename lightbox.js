@@ -1,45 +1,45 @@
 // Open the Modal
-function openModal() {
-    document.getElementById("myModal").style.display = "block";
+function openLightboxModal() {
+    document.getElementById("lightbox-modal").style.display = "block";
 }
 
 // Close the Modal
-function closeModal() {
-    document.getElementById("myModal").style.display = "none";
+function closeLightboxModal() {
+    document.getElementById("lightbox-modal").style.display = "none";
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+let lightboxSlideIndex = 1;
+lightboxShowSlides(lightboxSlideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function lightboxPlusSlides(n) {
+    lightboxShowSlides(lightboxSlideIndex += n);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function lightboxCurrentSlide(n) {
+    lightboxShowSlides(lightboxSlideIndex = n);
 }
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
+function lightboxShowSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("lightboxSlides");
+    let dots = document.getElementsByClassName("lightboxDemo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) { lightboxSlideIndex = 1 }
+    if (n < 1) { lightboxSlideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" lightbox-active", "");
     }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    captionText.innerHTML = dots[slideIndex - 1].alt;
+    slides[lightboxSlideIndex - 1].style.display = "block";
+    dots[lightboxSlideIndex - 1].className += " lightbox-active";
+    captionText.innerHTML = dots[lightboxSlideIndex - 1].alt;
 }
 
-// let slide = document.querySelectorAll(".mySlides")
+// let slide = document.querySelectorAll(".lightboxSlides")
 // slide.addEventListener("click", function () {
 //     alert("Hello World");
 // });
