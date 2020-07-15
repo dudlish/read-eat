@@ -276,7 +276,8 @@ font-size: 0.9rem;
 
 /* Icons */
 .icons {
-    padding: 30px;
+    padding: 10px;
+    background: red;
 }
 
 .icons h3 {
@@ -371,6 +372,33 @@ font-size: 0.9rem;
     grid-gap: 0.5rem;
     justify-content: center;
     align-items: center;
+}
+
+/* Books */
+.book-genres {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+}
+
+.book-genres > .card {
+    height: 60px;
+    border: none;
+    width: 90%;
+}
+
+.book-genres img {
+    height: 100%;
+}
+
+.card-img-overlay {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    font-weight: bold;
 }
 
 /* Footer */
