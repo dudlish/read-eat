@@ -73,6 +73,11 @@ hr.dotted {
 }
 
 /* Utilities */
+.container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .width-container {
     max-width: var(--max-width);
     margin: auto;
