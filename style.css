@@ -30,20 +30,16 @@ body {
     color: var(--second-color);
 }
 
-/* body > .container {
-    padding-top: 60px;
-} */
-
 h2 {
     font-size: 2rem;
     font-weight: 100;
-    margin: 5px 0;
+    margin: 15px 3.5rem;
 }
 
 h3 {
     font-size: 1rem;
     font-weight: 400;
-    margin: 5px 0;
+    /* margin: 5px 0; */
 }
 
 ul {
@@ -80,8 +76,27 @@ hr.dotted {
 .width-container {
     max-width: var(--max-width);
     margin: auto;
-    padding: 0 2rem;
+    padding: 0 0.5rem;
     /* overflow: hidden; */
+}
+
+.section-heading {
+    
+padding: 0;
+}
+
+.lead {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.white-back {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.recipe-heading {
+
 }
 
 .btn-green {
@@ -101,22 +116,12 @@ hr.dotted {
     align-items: center;
 }
 
-/* .section-header {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    text-align: start;
-} */
-
-.section-header  h3 {
-    /* font-size: 40px; */
-    /* margin: 20px 0; */
+small {
+    height: 100%;
 }
 
 .section-padding {
-    padding: 20px 20px 10px;
+    padding: 10px 10px 10px;
 }
 
 #brand {
@@ -129,36 +134,27 @@ hr.dotted {
     font-size: 3rem;
 }
 
-/* Recipe Heading Container */
-.recipe-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.1rem;    
-}
+/* Recipe Container */
 
-.recipe-container > * {
-    /* background: pink; */
+.blockquote-footer::before {
+    content: "";
 }
-
-.recipe-container > *:first-child,
-.recipe-container > *:last-child {
-    grid-column: 1 / span 3;
-}
-
-.recipe-container > .quote {
+.quote {
 font-style: italic;
 font-size: 0.9rem;
 }
 
 .recipe-category {
     display: inline-block;
-    color: #fff;
+    color: var(--second-color);
     font-size: .55rem;
     text-transform: uppercase;
     padding: 0.4rem 0.6rem;
+    margin-top: 0.4rem;
     border-radius: 15px;
-    margin-bottom: 0.5rem;
     max-width: fit-content;
+    align-items: center;
+    justify-content: center;
 }
 
 .category-snack {

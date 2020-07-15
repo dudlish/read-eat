@@ -72,105 +72,120 @@
         </div>
 
         <!-- Editor's Choice -->
-        <section class="books section-padding width-container">
-            <div class="recipe-container">
-                <h2>Today Editor's Choice</h2>
-                <p>Pippi Longstocking by Astrid Lindgren</p>
-                <h3>Peaches-and-Cream Pancakes</h3>
-                <div class="recipe-category category-dessert">Dessert</div>
-                <p class="quote">“And they shouted with delight when they saw all the good things Pippi had set out
-                    on the bare rock. There were lovely little sandwiches of meatloaf and ham, a whole pile of
-                    pancakes sprinkled with sugar, little brown sausages, and three pineapple puddings.”</p>
-            </div>
-
-            <!-- Images used to open the lightbox -->
-            <div class="lightbox-row">
-                <div class="lightbox-column">
-                    <img src="img/books/A.Lindgren_Pippi/book.jpg" onclick="openLightboxModal();lightboxCurrentSlide(1)"
-                        class="lightbox-hover-shadow">
-                </div>
-                <div class="lightbox-column">
-                    <img src="img/books/A.Lindgren_Pippi/dish.jpg" onclick="openLightboxModal();lightboxCurrentSlide(2)"
-                        class="lightbox-hover-shadow">
-                </div>
-                <div class="lightbox-column">
-                    <img src="img/books/A.Lindgren_Pippi/ingredient1.jpg"
-                        onclick="openLightboxModal();lightboxCurrentSlide(3)" class="lightbox-hover-shadow">
-                </div>
-                <div class="lightbox-column">
-                    <img src="img/books/A.Lindgren_Pippi/ingredient2.jpg"
-                        onclick="openLightboxModal();lightboxCurrentSlide(4)" class="lightbox-hover-shadow">
-                </div>
-            </div>
-
-            <!-- The Modal/Lightbox -->
-            <div id="lightbox-modal" class="lightbox-modal">
-                <span class="close cursor" onclick="closeLightboxModal()">&times;</span>
-                <div class="lightbox-modal-content">
-
-                    <div class="lightboxSlides">
-                        <div class="lightboxCount">1 / 4</div>
-                        <img src="img/books/A.Lindgren_Pippi/book.jpg" style="width:100%">
+        <h2 class="section-heading">Today Editor's Choice</h2>
+        <div class="white-back width-container">
+            <div class="container recipe-heading">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="row">
+                            <h3 class="lead">Peaches-and-Cream Pancakes</h3>
+                        </div>
+                        <div class="row">
+                            <footer class="blockquote-footer"> Pippi Longstocking <cite title="Source Title">by
+                                    Astrid Lindgren</cite></footer>
+                        </div>
+                        <div class="row">
+                            <div class="recipe-category category-dessert">Dessert</div>
+                        </div>
                     </div>
-
-                    <div class="lightboxSlides">
-                        <div class="lightboxCount">2 / 4</div>
-                        <img src="img/books/A.Lindgren_Pippi/dish.jpg" style="width:100%">
-                    </div>
-
-                    <div class="lightboxSlides">
-                        <div class="lightboxCount">3 / 4</div>
-                        <img src="img/books/A.Lindgren_Pippi/ingredient1.jpg" style="width:100%">
-                    </div>
-
-                    <div class="lightboxSlides">
-                        <div class="lightboxCount">4 / 4</div>
-                        <img src="img/books/A.Lindgren_Pippi/ingredient2.jpg" style="width:100%">
-                    </div>
-
-                    <!-- Next/previous controls -->
-                    <a class="lightboxPrev" onclick="lightboxPlusSlides(-1)">&#10094;</a>
-                    <a class="lightboxNext" onclick="lightboxPlusSlides(1)">&#10095;</a>
-
-                    <!-- Caption text -->
-                    <div class="caption-container">
-                        <p id="caption"></p>
-                    </div>
-
-                    <!-- Thumbnail image controls -->
-                    <div class="lightbox-column">
-                        <img class="lightboxDemo" src="img/books/A.Lindgren_Pippi/book.jpg"
-                            onclick="lightboxCurrentSlide(1)" alt="Pippi Longstocking by Astrid Lindgren">
-                    </div>
-
-                    <div class="lightbox-column">
-                        <img class="lightboxDemo" src="img/books/A.Lindgren_Pippi/dish.jpg"
-                            onclick="lightboxCurrentSlide(2)" alt="Peaches-and-Cream Pancakes Recipe">
-                    </div>
-
-                    <div class="lightbox-column">
-                        <img class="lightboxDemo" src="img/books/A.Lindgren_Pippi/ingredient1.jpg"
-                            onclick="lightboxCurrentSlide(3)" alt="Peaches-and-Cream Pancakes Recipe">
-                    </div>
-
-                    <div class="lightbox-column">
-                        <img class="lightboxDemo" src="img/books/A.Lindgren_Pippi/ingredient2.jpg"
-                            onclick="lightboxCurrentSlide(4)" alt="Peaches-and-Cream Pancakes Recipe">
+                    <div class="col-sm">
+                        <p class="quote">“And they shouted with delight when they saw all the good things Pippi had set
+                            out
+                            on the bare rock. There were lovely little sandwiches of meatloaf and ham, a whole pile of
+                            pancakes sprinkled with sugar, little brown sausages, and three pineapple puddings.”</p>
                     </div>
                 </div>
             </div>
 
-            <div class="flex">
-                <a href="books.html" class="btn-green btn-center">Open Recipe</a>
+            <section class="books section-padding width-container">
+                <!-- Images used to open the lightbox -->
+                <div class="lightbox-row">
+                    <div class="lightbox-column">
+                        <img src="img/books/A.Lindgren_Pippi/book.jpg"
+                            onclick="openLightboxModal();lightboxCurrentSlide(1)" class="lightbox-hover-shadow">
+                    </div>
+                    <div class="lightbox-column">
+                        <img src="img/books/A.Lindgren_Pippi/dish.jpg"
+                            onclick="openLightboxModal();lightboxCurrentSlide(2)" class="lightbox-hover-shadow">
+                    </div>
+                    <div class="lightbox-column">
+                        <img src="img/books/A.Lindgren_Pippi/ingredient1.jpg"
+                            onclick="openLightboxModal();lightboxCurrentSlide(3)" class="lightbox-hover-shadow">
+                    </div>
+                    <div class="lightbox-column">
+                        <img src="img/books/A.Lindgren_Pippi/ingredient2.jpg"
+                            onclick="openLightboxModal();lightboxCurrentSlide(4)" class="lightbox-hover-shadow">
+                    </div>
+                </div>
+        </div>
+
+
+        <!-- The Modal/Lightbox -->
+        <div id="lightbox-modal" class="lightbox-modal">
+            <span class="close cursor" onclick="closeLightboxModal()">&times;</span>
+            <div class="lightbox-modal-content">
+
+                <div class="lightboxSlides">
+                    <div class="lightboxCount">1 / 4</div>
+                    <img src="img/books/A.Lindgren_Pippi/book.jpg" style="width:100%">
+                </div>
+
+                <div class="lightboxSlides">
+                    <div class="lightboxCount">2 / 4</div>
+                    <img src="img/books/A.Lindgren_Pippi/dish.jpg" style="width:100%">
+                </div>
+
+                <div class="lightboxSlides">
+                    <div class="lightboxCount">3 / 4</div>
+                    <img src="img/books/A.Lindgren_Pippi/ingredient1.jpg" style="width:100%">
+                </div>
+
+                <div class="lightboxSlides">
+                    <div class="lightboxCount">4 / 4</div>
+                    <img src="img/books/A.Lindgren_Pippi/ingredient2.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="lightboxPrev" onclick="lightboxPlusSlides(-1)">&#10094;</a>
+                <a class="lightboxNext" onclick="lightboxPlusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="lightbox-column">
+                    <img class="lightboxDemo" src="img/books/A.Lindgren_Pippi/book.jpg"
+                        onclick="lightboxCurrentSlide(1)" alt="Pippi Longstocking by Astrid Lindgren">
+                </div>
+
+                <div class="lightbox-column">
+                    <img class="lightboxDemo" src="img/books/A.Lindgren_Pippi/dish.jpg"
+                        onclick="lightboxCurrentSlide(2)" alt="Peaches-and-Cream Pancakes Recipe">
+                </div>
+
+                <div class="lightbox-column">
+                    <img class="lightboxDemo" src="img/books/A.Lindgren_Pippi/ingredient1.jpg"
+                        onclick="lightboxCurrentSlide(3)" alt="Peaches-and-Cream Pancakes Recipe">
+                </div>
+
+                <div class="lightbox-column">
+                    <img class="lightboxDemo" src="img/books/A.Lindgren_Pippi/ingredient2.jpg"
+                        onclick="lightboxCurrentSlide(4)" alt="Peaches-and-Cream Pancakes Recipe">
+                </div>
             </div>
+        </div>
+
+        <div class="flex">
+            <a href="books.html" class="btn-green btn-center">Open Recipe</a>
+        </div>
         </section>
         <hr class="dotted">
         <!-- About Icons -->
         <section class="icons bg-light width-container" id="about">
-            <header class="section-header">
-                <h3>Choose the Meal</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, consequuntur.</p>
-            </header>
+            <h3>Choose the Meal</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, consequuntur.</p>
 
             <div class="flex-items">
                 <div>
