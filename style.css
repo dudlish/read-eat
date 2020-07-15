@@ -64,7 +64,7 @@ a:hover {
 hr.dotted {
     border-top: 3px dotted #bbb;
     width: 95%;
-    margin: auto
+    margin: 30px auto;
   }
 
 .main-color {
@@ -357,6 +357,13 @@ font-size: 0.9rem;
 
 .flex-columns p {
     margin: 20px 0;
+}
+
+/* Blog */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
 }
 
 /* Footer */
