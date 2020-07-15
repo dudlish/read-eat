@@ -80,14 +80,21 @@ hr.dotted {
     /* overflow: hidden; */
 }
 
-.section-heading {
-    
-padding: 0;
+.recipe-card {
+    margin-right: 20px;
 }
 
 .lead {
     margin-top: 10px;
     font-weight: 600;
+}
+
+.carousel-inner > .carousel-item > img { 
+    /* height:220px; */
+}
+
+.recipe-card-carousel {
+    /* max-height: 220px; */
 }
 
 .white-back {
@@ -260,10 +267,6 @@ font-size: 0.9rem;
   
 .show {
     display:block;
-}
-
-.books .lightbox-row img {
-  width: 100%;
 }
 
 /* Icons */
