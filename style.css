@@ -6,7 +6,7 @@
     --main-color: #75c7bf;
     --back-color: #faeee7;
     --second-color: #737373;
-    --active-color: #ddd;
+    /* --active-color: #ddd; */
     --max-width: 1200px;
 }
 
@@ -47,9 +47,20 @@ h3 {
     font-weight: 400;
 }
 
-a:hover {
+a {
+    color: var(--second-color);
+}
+
+.a-btn:hover {
     text-decoration: none;
-    color: white;
+    color: var(--back-color);
+    cursor: pointer;
+}
+
+.a-header:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--second-color);
 }
 
 hr.dotted {
@@ -80,7 +91,7 @@ hr.dotted {
     cursor: pointer;
     display: inline-block;
     padding: 10px 30px;
-    color: var(--back-color);
+    color: var(--second-color);
     background: var(--main-color);
     border: none;
     border-radius: 5px;
@@ -96,13 +107,14 @@ small {
     height: 100%;
 }
 
-.recipe-category {
+.recipe-category,
+.book-category {
     display: inline-block;
     color: var(--second-color);
     font-size: .55rem;
     text-transform: uppercase;
-    padding: 0.4rem 0.6rem;
-    margin-top: 0.4rem;
+    padding: 0.2rem 0.4rem;
+    margin: 0.4rem 0.2rem;
     border-radius: 15px;
     max-width: fit-content;
     align-items: center;
@@ -124,20 +136,6 @@ small {
 
 .category-dessert {
     background: var(--dessert-color);
-}
-
-.book-category {
-    display: inline-block;
-    color: var(--second-color);
-    font-size: .55rem;
-    text-transform: uppercase;
-    padding: 0.4rem 0.6rem;
-    margin-top: 0.4rem;
-    border-radius: 15px;
-    max-width: fit-content;
-    align-items: center;
-    justify-content: center;
-    box-shadow: .5px .5px .5px .5px var(--second-color);
 }
 
 .book-category:hover {
@@ -318,7 +316,7 @@ form {
 
 /* Footer */
 .page-footer {
-    color: var(--active-color);
+    color: var(--back-color);
     background: var(--second-color);
 }
 
