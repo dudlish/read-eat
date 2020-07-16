@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <h1 id="brand" class="main-color">Read Eat</h1>
+            <h1 id="brand">Read Eat</h1>
         </a>
         <div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -71,13 +71,14 @@
         <!-- Editor's Choice -->
         <h2 class="section-heading container">Today Editor's Choice</h2>
         <div class="width-container">
-            <div class="container recipe-heading white-back">
-                <div class="row recipe-card">
+            <div class="container white-back">
+                <div class="row">
                     <div class="col-sm">
                         <h3 class="lead">Peaches-and-Cream Pancakes</h3>
                         <footer class="blockquote-footer"> Pippi Longstocking <cite title="Source Title">by
                                 Astrid Lindgren</cite></footer>
                         <div class="recipe-category category-dessert">Dessert</div>
+                        <div class="book-category category-classics">Classics</div>
                         <p class="quote">“And they shouted with delight when they saw all the good things Pippi had
                             set out on the bare rock. There were lovely little sandwiches of meatloaf and ham, a
                             whole pile of pancakes sprinkled with sugar, little brown sausages, and three pineapple
@@ -130,21 +131,21 @@
             <!-- Meals Icons -->
             <h2 class="section-heading container">All Recipes</h2>
 
-            <section class="icons bg-light container white-back id=" about">
+            <section class="icons container id=" about">
                 <div class="flex-items">
-                    <div>
+                    <div class="icon-container">
                         <i class="fas fa-bread-slice fa-4x"></i>
                         <div>
                             <h4>Snack</h4>
                         </div>
                     </div>
-                    <div>
+                    <div class="icon-container">
                         <i class="fas fa-utensils fa-4x"></i>
                         <div>
                             <h4>Main Course</h4>
                         </div>
                     </div>
-                    <div>
+                    <div class="icon-container">
                         <i class="fas fa-ice-cream fa-4x"></i>
                         <div>
                             <h4>Dessert</h4>
@@ -303,14 +304,71 @@
 
     </main>
 
-    <footer class="footer bg-dark">
-        <div class="social">
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-5 mt-md-0 mt-3">
+                    <!-- Logo -->
+                    <h1 id="brand">Read Eat</h1>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mt-md-0 mt-3">
+
+                    <!-- About -->
+                    <h5 class="text-uppercase">About</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione culpa magni repellat qui
+                        consequatur temporibus aperiam mollitia totam harum doloribus?</p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-md-1 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Books</a>
+                        </li>
+                        <li>
+                            <a href="#!">Recipes</a>
+                        </li>
+                        <li>
+                            <a href="#!">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#!">About</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fas fa-home mr-3"></i> Helsinki, Finland
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope mr-3"></i> Email: info@readeat.com
+                        </li>
+                        <li>
+                            <i class="fas fa-phone mr-3"></i>Phone: + 358 34 567 88 00
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <p>Copyright &copy; 2020 - Read Eat</p>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://dudlish.github.io/read-eat/"> Read Eat</a>
+        </div>
     </footer>
 
     <script src="app.js"></script>
