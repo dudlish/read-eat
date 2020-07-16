@@ -280,6 +280,10 @@ font-size: 0.9rem;
     width: 100%;
 }
 
+/* .book-genres .card:hover {
+   background: yellow;
+} */
+
 .book-genres img {
     height: 100%;
 }
