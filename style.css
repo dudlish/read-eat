@@ -397,6 +397,10 @@ font-size: 0.9rem;
     align-items: center;
 }
 
+.card-img-top {
+    opacity: 0.9;
+}
+
 .card-title {
     font-weight: bold;
 }
