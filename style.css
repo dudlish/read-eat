@@ -399,8 +399,6 @@ grid-template-areas:
 }
 
 
-
-
 /* MOBILE */
 /* Tablet Size */
 @media(max-width: 786px) {
@@ -477,7 +475,6 @@ grid-template-areas:
         grid-template-columns: 1fr;
         text-align: center;
         /* width: 100%; */
-
     }
 
     .book-genres .card {
