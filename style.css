@@ -240,7 +240,6 @@ font-size: 0.9rem;
 }
 
 /* Icons */
-
 .icon-container {
     border: 1px dotted var(--second-color);
     border-radius: 10px;
@@ -430,6 +429,21 @@ grid-template-areas:
 "ingredients preparation preparation";
 }
 
+/* BOOKS PAGE */
+.form-inline {
+    float: right;
+
+}
+
+.btn-outline-success {
+    border: none;
+    color: var(--second-color);
+    /* margin-right: 20px; */
+}
+
+.btn-outline-success:hover {
+    background: var(--main-color);
+}
 
 /* MOBILE */
 /* Tablet Size */
