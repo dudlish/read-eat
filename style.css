@@ -430,10 +430,6 @@ grid-template-areas:
 }
 
 /* BOOKS PAGE */
-.form-inline {
-    float: right;
-
-}
 
 .btn-outline-success {
     border: none;
