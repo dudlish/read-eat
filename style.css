@@ -444,6 +444,16 @@ grid-template-areas:
     font-weight: 600;
 }
 
+/* POST PAGE */
+/* .post-page img {
+    height: 400px;
+    text-align: center;
+} */
+
+.popular-posts .card{
+    border: none;
+}
+
 /* MOBILE */
 /* Tablet Size */
 @media(max-width: 786px) {
@@ -523,3 +533,13 @@ grid-template-areas:
         display: none;
     }
 }
+
+
+
+/*----------------------------*\
+	Element
+\*----------------------------*/
+
+/*=========================================================
+   PAGE
+===========================================================*/
