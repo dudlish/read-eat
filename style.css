@@ -334,6 +334,7 @@ form {
 .page-footer {
     color: var(--back-color);
     background: var(--second-color);
+    margin-top: 20px;
 }
 
 .page-footer a {
@@ -364,6 +365,19 @@ form {
 
 .social > * {
     margin-right: 30px;
+}
+
+/* ALL RECIPES PAGE */
+.card-scroll {
+    min-height: 300px;
+    min-width: 250px;
+    margin-right: 7px;
+}
+
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;  
 }
 
 /* RECIPE PAGE */
