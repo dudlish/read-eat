@@ -399,7 +399,7 @@ form {
 
 .recipe-details { 
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
     grid-area: details;
 }
 
@@ -430,15 +430,18 @@ grid-template-areas:
 }
 
 /* BOOKS PAGE */
-
-.btn-outline-success {
-    border: none;
-    color: var(--second-color);
-    /* margin-right: 20px; */
+/* ABOUT PAGE */
+.about-logo {
+    max-height: 300px;
 }
 
-.btn-outline-success:hover {
-    background: var(--main-color);
+.team-images img {
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+.team-images h3 {
+    font-weight: 600;
 }
 
 /* MOBILE */

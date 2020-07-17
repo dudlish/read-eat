@@ -1,26 +1,36 @@
 // DOM Variables
 // const filter = document.querySelector("#filter");
-const aLink = document.querySelector("a");
+// const card = document.querySelectorAll(".card");
 
 // Event Listeners
-aLink.addEventListener("click", check);
+// aLink.addEventListener("click", check);
+// cardA.addEventListener("click", myFunc);
 
-// filter.addEventListener("keyup", filterTasks);
+// filter.addEventListener("keyup", filterBooks);
 
-function check() {
-    console.log("hi");
-}
+// function myFunc() {
+//     console.log(cardA.length);
+// }
 
-// function filterTasks(e) {
+// document.querySelectorAll('.card').forEach(item => {
+//     item.addEventListener('click', event => {
+//         console.log(item);
+//     })
+// })
+
+// function filterBooks(e) {
 //     const text = e.target.value.toLowerCase();
 //     console.log(text);
-//     // quertselector returns node list and that is why we can use foreach loop
-//     document.querySelectorAll(".card").forEach(function (task) {
-//         const item = task.firstChild.textContent;
-//         if (item.toLowerCase().indexOf(text) != -1) {
-//             card.style.display = "block";
-//         } else {
-//             card.style.display = "none";
-//         }
-//     });
+
+
+    // queryselector returns node list and that is why we can use foreach loop
+    // document.querySelectorAll(".card").forEach(function (book) {
+    //     const item = book.firstChild.textContent;
+
+    //     if (item.toLowerCase().indexOf(text) != -1) {
+    //         card.style.display = "block";
+    //     } else {
+    //         card.style.display = "none";
+    //     }
+    // });
 // }
