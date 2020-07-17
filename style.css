@@ -8,6 +8,7 @@
     --second-color: #737373;
     /* --active-color: #ddd; */
     --max-width: 1200px;
+    --main-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
 }
 
 .recipe-category {
@@ -208,7 +209,7 @@ small {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: var(--main-shadow);
     z-index: 1;
 }
 
@@ -242,7 +243,7 @@ font-size: 0.9rem;
 }
 
 .icon-container:hover {
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: var(--main-shadow);
 }
 
 .icons i {
@@ -274,32 +275,32 @@ font-size: 0.9rem;
     grid-gap: 10px;
 }
 
-.book-genres > .card {
-    height: 60px;
+.book-genres .btn {
     border: none;
-    width: 100%;
 }
 
-/* .book-genres .card:hover {
-   background: yellow;
-} */
-
-.book-genres img {
-    height: 100%;
+.book-genres .btn:hover {
+    box-shadow: var(--main-shadow);
 }
 
-.card-img-overlay {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.back-img-classics {
+background: url("img/genres/classics-gold.jpg");
 }
 
-.card-img-top {
-    opacity: 0.9;
+.back-img-fiction {
+    background: url("img/genres/fiction-blue.jpg");
 }
 
-.card-title {
-    font-weight: bold;
+.back-img-detective {
+    background: url("img/genres/detective-black.jpg");
+}
+
+.back-img-romance {
+    background: url("img/genres/romance-pink.jpg");
+}
+
+.back-img-historical {
+    background: url("img/genres/historical-brown.jpg");
 }
 
 /* Blog */
@@ -312,7 +313,7 @@ font-size: 0.9rem;
 }
 
 .blog-grid .card:hover {
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: var(--main-shadow);
 }
 
 /* Form */
@@ -416,9 +417,6 @@ grid-template-areas:
         margin: 0;
         padding: 0;
     }
-    .card-title {
-        font-size: 1.1rem;
-    }
 
     .blog-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -479,11 +477,6 @@ grid-template-areas:
         grid-template-columns: 1fr;
         text-align: center;
         /* width: 100%; */
-    }
-
-    .book-genres .card {
-        width: 100%;
-        margin: 5px 0;
     }
 
     .hide-mobile {
