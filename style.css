@@ -213,6 +213,10 @@ small {
     z-index: 1;
 }
 
+.dropdown-item:focus {
+background: var(--main-color);
+}
+
 /* Jumbotron */
 .jumbotron {
     background: url("img/back_pic.jpg");
@@ -277,10 +281,15 @@ font-size: 0.9rem;
 
 .book-genres .btn {
     border: none;
+    
 }
 
+.book-genres .btn:focus {
+    border: none;
+  }
+
 .book-genres .btn:hover {
-    box-shadow: var(--main-shadow);
+    cursor: pointer;
 }
 
 .back-img-classics {
@@ -327,8 +336,12 @@ form {
     background: var(--second-color);
 }
 
-.page-footer  a {
+.page-footer a {
     color: var(--back-color);
+}
+
+.page-footer a:hover {
+    text-decoration: none;
 }
 
 .page-footer #brand{
