@@ -323,23 +323,30 @@ font-size: 0.9rem;
 }
 
 .book-genres .btn {
-    border: none;
-    
+    background: var(--back-color);
+    color: var(--second-color);
+    border: 1px solid var(--main-color);
 }
-
-.book-genres .btn:focus {
-    border: none;
-  }
 
 .book-genres .btn:hover {
     cursor: pointer;
+    background: var(--second-color);
+    border: none;
+    color: var(--back-color);
 }
 
-.back-img-classics { background: url("img/genres/classics-gold.jpg");}
+/* .back-img-classics { background: url("img/genres/classics-gold.jpg");} */
 .back-img-fiction { background: url("img/genres/fiction-blue.jpg");}
 .back-img-detective { background: url("img/genres/detective-black.jpg");}
 .back-img-romance { background: url("img/genres/romance-pink.jpg");}
 .back-img-historical { background: url("img/genres/historical-brown.jpg");}
+
+.back-img-classics { 
+    /* background: url("img/genres/classics-gold.jpg"); */
+    
+    background:var(--back-color);
+    color: var(--second-color);
+}
 
 /*----------------------------*\
 	BLOG
