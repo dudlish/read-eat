@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-/*Variables */
+/*=========================================================
+   VARIABLES
+===========================================================*/
 :root {
     --main-color: #75c7bf;
     --back-color: #faeee7;
@@ -24,7 +26,9 @@
     --historical-color: #8D6450;
 }
 
-/* Main Elements' Styles */
+/*=========================================================
+   MAIN ELEMENTS' STYLES
+===========================================================*/
 * {
     margin: 0;
     padding: 0;
@@ -70,7 +74,9 @@ hr.dotted {
     margin: 30px auto;
   }
 
-/* Utilities */
+/*=========================================================
+   UTILITIES
+===========================================================*/
 .container {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -127,45 +133,30 @@ small {
     color: var(--back-color);
 }
 
-.category-snack {
-    background: var(--snack-color);
-}
-
-.category-mainCourse {
-    background: var(--mainCourse-color);
-}
-
-.category-dessert {
-    background: var(--dessert-color);
-}
+.category-snack { background: var(--snack-color);}
+.category-mainCourse { background: var(--mainCourse-color);}
+.category-dessert { background: var(--dessert-color);}
 
 .book-category:hover {
     color: var(--back-color);
 }
 
-.category-classics {
-    background: var(--classics-color);
-}
-
-.category-fiction {
-    background: var(--fiction-color);
-}
+.category-classics { background: var(--classics-color);}
+.category-fiction { background: var(--fiction-color);}
+.category-romance { background: var(--romance-color);}
 
 .category-detective {
     color: var(--back-color);
     background: var(--detective-color);
 }
-
-.category-romance {
-    background: var(--romance-color);
-}
-
 .category-historical {
     color: var(--back-color);
     background: var(--historical-color);
 }
 
-/* Navbar */
+/*----------------------------*\
+	NAVBAR
+\*----------------------------*/
 #brand {
     font-family: "Pacifico", sans-serif;
     text-align: center;
@@ -197,7 +188,9 @@ small {
     color: var(--main-color);
 }
 
-/* Dropdown Menu */
+/*----------------------------*\
+	DROPDOWN MENU
+\*----------------------------*/
 .dropdown-menu a {
     color: var(--second-color);
     padding: 10px 10px;
@@ -217,119 +210,9 @@ small {
 background: var(--main-color);
 }
 
-/* Jumbotron */
-.jumbotron {
-    background: url("img/back_pic.jpg");
-    text-align: center;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-/* Recipe Container */
-.blockquote-footer::before {
-    content: "";
-}
-.quote {
-font-style: italic;
-font-size: 0.9rem;
-}
-
-/* Icons */
-.icon-container {
-    border: 1px dotted var(--second-color);
-    border-radius: 10px;
-}
-
-.icon-container:hover {
-    box-shadow: var(--main-shadow);
-}
-
-.icons i {
-    color: var(--second-color);
-    padding: 1rem;
-    margin-bottom: 15px;
-}
-
-.icons i:hover {
-    cursor: pointer;
-}
-
-.flex-items {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    height: 100%;
-}
-
-.flex-items > * {
-    padding: 10px;
-    min-width: 200px;
-}
-
-/* Books */
-.book-genres {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-}
-
-.book-genres .btn {
-    border: none;
-    
-}
-
-.book-genres .btn:focus {
-    border: none;
-  }
-
-.book-genres .btn:hover {
-    cursor: pointer;
-}
-
-.back-img-classics {
-background: url("img/genres/classics-gold.jpg");
-}
-
-.back-img-fiction {
-    background: url("img/genres/fiction-blue.jpg");
-}
-
-.back-img-detective {
-    background: url("img/genres/detective-black.jpg");
-}
-
-.back-img-romance {
-    background: url("img/genres/romance-pink.jpg");
-}
-
-.back-img-historical {
-    background: url("img/genres/historical-brown.jpg");
-}
-
-/* Blog */
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.blog-grid .card:hover {
-    box-shadow: var(--main-shadow);
-}
-
-/* Form */
-form {
-    margin: 20px 0;
-}
-
-/* Footer */
+/*----------------------------*\
+	FOOTER
+\*----------------------------*/
 .page-footer {
     color: var(--back-color);
     background: var(--second-color);
@@ -366,7 +249,124 @@ form {
     margin-right: 30px;
 }
 
-/* ALL RECIPES PAGE */
+/*=========================================================
+   INDEX.HTML
+===========================================================*/
+
+/*----------------------------*\
+	JUMBOTRON
+\*----------------------------*/
+.jumbotron {
+    background: url("img/back_pic.jpg");
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/*----------------------------*\
+	EDITORS CHOICE RECIPE
+\*----------------------------*/
+.blockquote-footer::before {
+    content: "";
+}
+.quote {
+font-style: italic;
+font-size: 0.9rem;
+}
+
+/*----------------------------*\
+	FOOD ICONS
+\*----------------------------*/
+.icon-container {
+    border: 1px dotted var(--second-color);
+    border-radius: 10px;
+}
+
+.icon-container:hover {
+    box-shadow: var(--main-shadow);
+}
+
+.icons i {
+    color: var(--second-color);
+    padding: 1rem;
+    margin-bottom: 15px;
+}
+
+.icons i:hover {
+    cursor: pointer;
+}
+
+.flex-items {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.flex-items > * {
+    padding: 10px;
+    min-width: 200px;
+}
+
+/*----------------------------*\
+	BOOK GENRES
+\*----------------------------*/
+.book-genres {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.book-genres .btn {
+    border: none;
+    
+}
+
+.book-genres .btn:focus {
+    border: none;
+  }
+
+.book-genres .btn:hover {
+    cursor: pointer;
+}
+
+.back-img-classics { background: url("img/genres/classics-gold.jpg");}
+.back-img-fiction { background: url("img/genres/fiction-blue.jpg");}
+.back-img-detective { background: url("img/genres/detective-black.jpg");}
+.back-img-romance { background: url("img/genres/romance-pink.jpg");}
+.back-img-historical { background: url("img/genres/historical-brown.jpg");}
+
+/*----------------------------*\
+	BLOG
+\*----------------------------*/
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-grid .card:hover {
+    box-shadow: var(--main-shadow);
+}
+
+/*----------------------------*\
+	FORM
+\*----------------------------*/
+form {
+    margin: 20px 0;
+}
+
+
+/*=========================================================
+   RECIPES.HTML
+===========================================================*/
 .card-scroll {
     min-height: 300px;
     min-width: 250px;
@@ -379,7 +379,9 @@ form {
     overflow-x: auto;  
 }
 
-/* RECIPE PAGE */
+/*=========================================================
+   RECIPE01.HTML
+===========================================================*/
 #recipe-page > * {
     margin: 20px;
 }
@@ -429,8 +431,9 @@ grid-template-areas:
 "ingredients preparation preparation";
 }
 
-/* BOOKS PAGE */
-/* ABOUT PAGE */
+/*=========================================================
+   ABOUT.HTML
+===========================================================*/
 .about-logo {
     max-height: 300px;
 }
@@ -444,15 +447,21 @@ grid-template-areas:
     font-weight: 600;
 }
 
-/* POST PAGE */
+/*=========================================================
+   POST01.HTML
+===========================================================*/
 .popular-posts .card{
     border: none;
 }
 
-/* MOBILE */
-/* Tablet Size */
+/*=========================================================
+MOBILE
+===========================================================*/
+
+/*----------------------------*\
+	TABLET
+\*----------------------------*/
 @media(max-width: 786px) {
-    /* Stack Grid Items */
     .book-genres {
         grid-template-columns: repeat(3, 1fr);
         text-align: center;
@@ -487,8 +496,10 @@ grid-template-areas:
     }
 }
 
+/*----------------------------*\
+	CELL PHONE
+\*----------------------------*/
 @media(max-width: 500px) {
-    /* Stack Items */
     .book-genres {
         grid-template-columns: 1fr;
         justify-content: center;
@@ -528,13 +539,3 @@ grid-template-areas:
         display: none;
     }
 }
-
-
-
-/*----------------------------*\
-	Element
-\*----------------------------*/
-
-/*=========================================================
-   PAGE
-===========================================================*/
