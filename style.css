@@ -458,7 +458,7 @@ grid-template-areas:
 }
 
 .team-images img {
-    height: 180px;
+    max-height: 180px;
     margin-bottom: 20px;
 }
 
@@ -493,6 +493,7 @@ MOBILE
 
     .blog-grid {
         grid-template-columns: repeat(2, 1fr);
+        width: 80%;
     }
 
     .icon-container {
@@ -551,10 +552,18 @@ MOBILE
     .blog-grid {
         grid-template-columns: 1fr;
         text-align: center;
-        /* width: 100%; */
+        width: 70%;
     }
 
     .hide-mobile {
         display: none;
+    }
+
+    .about-logo {
+        margin-bottom: 20px;
+    }
+
+    .dropdown-menu {
+        overflow-y:scroll;
     }
 }
