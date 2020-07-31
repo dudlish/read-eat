@@ -63,25 +63,30 @@ function addCategory(layoutRoot, books, category) {
     categoryBooks.forEach(book => addBook(categoryBody, book));
 }
 
-// function addNavBar(layoutRoot, categories) {
-//     categories.forEach(category => {
-//         const item = document.createElement('a');
-//         item.text = category;
-//         item.href = `#${category.toLowerCase()}-books`;
-//         layoutRoot.appendChild(item);
-//         layoutRoot.appendChild(document.createElement('br'));
-//     });
-// }
+
+function addNavBar(navBarRoot, categories) {
+    categories.forEach(category => {
+        const item = document.createElement('a');
+        // const navBarRoot = document.getElementById('navbarDropdownCategories');
+
+        item.text = category;
+        item.href = `#${category.toLowerCase()}`;
+        item.className = "dropdown-item";
+        navBarRoot.appendChild(item);
+        // navBarRoot.appendChild(document.createElement('br'));
+    });
+}
 
 window.onload = () => {
     const layoutRoot = document.getElementById('books-page');
-    // const navBarRoot = document.getElementById('navBarRoot');
+    const navBarRoot = document.getElementById('navbarDropdownCategories');
+    console.log(navBarRoot);
 
     loadJSON('books.json', data => {
         const books = JSON.parse(data);
         const categories = new Set(books.map(b => b.category));
 
-        // addNavBar(navBarRoot, categories);
+        addNavBar(navBarRoot, categories);
 
         categories.forEach(category => {
             addCategory(layoutRoot, books, category);
