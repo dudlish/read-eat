@@ -19,71 +19,72 @@ function addBook(layoutRoot, book) {
     bookDiv.id = `book${book.id}`;
 
     bookDiv.innerHTML = `
+    <div class="card">
     <a href="author01.html" class="a-header">
-        <div class="card">
-            <img class="card-img-top" src="${book.img}" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">${book.title}</h5>
-                <p>${book.author}</p>
-            </div>
+        <img class="card-img-top" src="${book.img}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">${book.title}</h5>
+            <p>${book.author}</p>
         </div>
     </a>
+    </div>
+    
     `;
 
     layoutRoot.appendChild(bookDiv);
 }
 
-window.onload = () => {
-    const layoutRoot = document.getElementById('books-container');
+function addCategory(layoutRoot, books, category) {
+    // Get books of the current category
+    const categoryBooks = books.filter(b => b.category === category);
 
-    // const header = document.createElement('h1');
-    // header.innerText = "My Books";
-    // layoutRoot.appendChild(header);
+    // Create root for current category
+    const categoryRoot = document.createElement('div');
+    categoryRoot.className = "container";
+    categoryRoot.id = `${category.toLowerCase()}`;
+    layoutRoot.appendChild(categoryRoot);
+
+    const hrDotted = categoryRoot.appendChild(document.createElement("hr"));
+    hrDotted.className = "dotted";
+
+    // Add category header
+    const header = document.createElement('h2');
+    header.className = "container";
+    header.id = categoryRoot.id
+    header.innerText = category;
+    categoryRoot.appendChild(header);
+
+    // Add Category Body
+    const categoryBody = document.createElement('div');
+    categoryBody.className = "blog-grid container";
+    categoryRoot.appendChild(categoryBody);
+
+    // Add category books
+    categoryBooks.forEach(book => addBook(categoryBody, book));
+}
+
+// function addNavBar(layoutRoot, categories) {
+//     categories.forEach(category => {
+//         const item = document.createElement('a');
+//         item.text = category;
+//         item.href = `#${category.toLowerCase()}-books`;
+//         layoutRoot.appendChild(item);
+//         layoutRoot.appendChild(document.createElement('br'));
+//     });
+// }
+
+window.onload = () => {
+    const layoutRoot = document.getElementById('books-page');
+    // const navBarRoot = document.getElementById('navBarRoot');
 
     loadJSON('books.json', data => {
         const books = JSON.parse(data);
-        console.log(books);
-        books.forEach(book => {
-            addBook(layoutRoot, book);
+        const categories = new Set(books.map(b => b.category));
+
+        // addNavBar(navBarRoot, categories);
+
+        categories.forEach(category => {
+            addCategory(layoutRoot, books, category);
         });
     });
 };
-
-
-
-// DOM Variables
-// const filter = document.querySelector("#filter");
-// const card = document.querySelectorAll(".card");
-
-// Event Listeners
-// aLink.addEventListener("click", check);
-// cardA.addEventListener("click", myFunc);
-
-// filter.addEventListener("keyup", filterBooks);
-
-// function myFunc() {
-//     console.log(cardA.length);
-// }
-
-// document.querySelectorAll('.card').forEach(item => {
-//     item.addEventListener('click', event => {
-//         console.log(item);
-//     })
-// })
-
-// function filterBooks(e) {
-//     const text = e.target.value.toLowerCase();
-//     console.log(text);
-
-
-    // queryselector returns node list and that is why we can use foreach loop
-    // document.querySelectorAll(".card").forEach(function (book) {
-    //     const item = book.firstChild.textContent;
-
-    //     if (item.toLowerCase().indexOf(text) != -1) {
-    //         card.style.display = "block";
-    //     } else {
-    //         card.style.display = "none";
-    //     }
-    // });
-// }
