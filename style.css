@@ -514,6 +514,12 @@ MOBILE
     .page-footer {
         font-size: 0.9rem;
     }
+
+    .dropdown-menu:focus{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 /*----------------------------*\

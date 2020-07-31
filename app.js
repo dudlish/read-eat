@@ -35,6 +35,7 @@ function addBook(layoutRoot, book) {
 }
 
 function addCategory(layoutRoot, books, category) {
+    console.log(layoutRoot);
     // Get books of the current category
     const categoryBooks = books.filter(b => b.category === category);
 
@@ -67,13 +68,11 @@ function addCategory(layoutRoot, books, category) {
 function addNavBar(navBarRoot, categories) {
     categories.forEach(category => {
         const item = document.createElement('a');
-        // const navBarRoot = document.getElementById('navbarDropdownCategories');
 
         item.text = category;
-        item.href = `#${category.toLowerCase()}`;
+        item.href = `books.html#${category.toLowerCase()}`;
         item.className = "dropdown-item";
         navBarRoot.appendChild(item);
-        // navBarRoot.appendChild(document.createElement('br'));
     });
 }
 
@@ -87,9 +86,10 @@ window.onload = () => {
         const categories = new Set(books.map(b => b.category));
 
         addNavBar(navBarRoot, categories);
-
-        categories.forEach(category => {
-            addCategory(layoutRoot, books, category);
-        });
+        if (layoutRoot) {
+            categories.forEach(category => {
+                addCategory(layoutRoot, books, category);
+            });
+        }
     });
 };
