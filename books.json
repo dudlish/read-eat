@@ -1,0 +1,66 @@
+[
+    {
+        "id": "0",
+        "author": "Dudgaret McKatil",
+        "title": "Ducklings in the Rye",
+        "img": "img/books/book-1.jpg",
+        "description": "The ducks are not what they say they are!",
+        "category": "Classics"
+    },
+    {
+        "id": "1",
+        "author": "Michelle O'Duckling",
+        "title": "Duckoming",
+        "img": "img/books/book-2.jpg",
+        "description": "If it wacks like a duck, if it cracks like a quack, it must be a duck.",
+        "category": "Classics"
+    },
+    {
+        "id": "2",
+        "author": "Fedor Duckoevsky",
+        "title": "Duck and Punishment",
+        "img": "img/books/book-3.jpg",
+        "description": "Students and ducks are friends.",
+        "category": "Fiction"
+    },
+    {
+        "id": "3",
+        "author": "Jane Duckstin",
+        "title": "Duck and Prejudice",
+        "img": "img/books/book-4.jpg",
+        "description": "Romantic novel of manners and ducks.",
+        "category": "Detective"
+    },
+    {
+        "id": "4",
+        "author": "Herman Duckville",
+        "title": "Moby Duck",
+        "img": "img/books/book-5.jpg",
+        "description": "Students and ducks are friends.",
+        "category": "Romance"
+    },
+    {
+        "id": "5",
+        "author": "Duckias Lönnrot",
+        "title": "Duckevala",
+        "img": "img/books/book-6.jpg",
+        "description": "Romantic novel of manners and ducks.",
+        "category": "Detective"
+    },
+    {
+        "id": "6",
+        "author": "J.K. Duckling",
+        "title": "Harry Ducker",
+        "img": "img/books/book-7.jpg",
+        "description": "Students and ducks are friends.",
+        "category": "Romance"
+    },
+    {
+        "id": "7",
+        "author": "Ayn Dand",
+        "title": "Duck Shrugged",
+        "img": "img/books/book-8.jpg",
+        "description": "Romantic novel of manners and ducks.",
+        "category": "Historical"
+    }
+]

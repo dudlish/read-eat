@@ -29,20 +29,17 @@
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="books.html" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Books
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="books.html#classics">Classics</a>
-                            <a class=" dropdown-item" href="books.html#fiction">Fiction</a>
-                            <a class="dropdown-item" href="books.html#detective">Detective</a>
-                            <a class="dropdown-item" href="books.html#romance">Romance</a>
-                            <a class="dropdown-item" href="books.html#historical">Historical</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+                            id="navbarDropdownCategories">
+                            <!-- Categories dropdown menu items are added dynamically, usind categories in books.json -->
                         </div>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="recipes.html" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Recipes
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -62,247 +59,9 @@
         </div>
     </nav>
 
-    <main class="books-page width-container">
-        <!-- Meals Icons -->
+    <main class="books-page width-container" id="books-page">
         <h2 class="container">All Books</h2>
-
-        <!-- Genres -->
-        <hr class="dotted">
-
-        <!-- Classics -->
-        <h2 class="container" id="classics">Classics</h2>
-
-        <div class="blog-grid container">
-            <a href="author01.html" class="a-header">
-                <div class="card">
-                    <img class="card-img-top" src="img/books/book-2.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title One</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card">
-                    <img class="card-img-top" src="img/books/book-3.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Two</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card ">
-                    <img class="card-img-top" src="img/books/book-4.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Three</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card ">
-                    <img class="card-img-top" src="img/books/book-5.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Four</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <hr class="dotted">
-
-        <!-- Fiction -->
-        <h2 class="container" id="fiction">Fiction</h2>
-
-        <div class="blog-grid container">
-            <a href="#" class="a-header">
-                <div class="card">
-                    <img class="card-img-top" src="img/books/book-2.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title One</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card">
-                    <img class="card-img-top" src="img/books/book-3.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Two</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card ">
-                    <img class="card-img-top" src="img/books/book-4.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Three</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card ">
-                    <img class="card-img-top" src="img/books/book-5.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Four</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <hr class="dotted">
-
-        <!-- Detective -->
-        <h2 class="container" id="detective">Detective</h2>
-
-        <div class="blog-grid container">
-            <a href="#" class="a-header">
-                <div class="card">
-                    <img class="card-img-top" src="img/books/book-2.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title One</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card">
-                    <img class="card-img-top" src="img/books/book-3.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Two</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card ">
-                    <img class="card-img-top" src="img/books/book-4.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Three</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card ">
-                    <img class="card-img-top" src="img/books/book-5.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Four</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <hr class="dotted">
-
-        <!-- Romance -->
-        <h2 class="container" id="romance">Romance</h2>
-
-        <div class="blog-grid container">
-            <a href="#" class="a-header">
-                <div class="card">
-                    <img class="card-img-top" src="img/books/book-2.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title One</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card">
-                    <img class="card-img-top" src="img/books/book-3.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Two</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card ">
-                    <img class="card-img-top" src="img/books/book-4.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Three</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card ">
-                    <img class="card-img-top" src="img/books/book-5.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Four</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-
-        <hr class="dotted">
-
-        <!-- Historical -->
-        <h2 class="container" id="historical">Historical</h2>
-
-        <div class="blog-grid container">
-            <a href="#" class="a-header">
-                <div class="card">
-                    <img class="card-img-top" src="img/books/book-2.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title One</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card">
-                    <img class="card-img-top" src="img/books/book-3.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Two</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card ">
-                    <img class="card-img-top" src="img/books/book-4.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Three</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="a-header">
-                <div class="card ">
-                    <img class="card-img-top" src="img/books/book-5.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title Four</h5>
-                        <p>Book Author</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
+        <!-- Books, divided by categories, and are added here dynamically from books.json file -->
     </main>
 
     <!-- Footer -->
@@ -366,11 +125,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://dudlish.github.io/read-eat/"> Read Eat</a>
         </div>
     </footer>
 
