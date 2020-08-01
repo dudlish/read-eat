@@ -1,5 +1,3 @@
-
-// https://codepen.io/KryptoniteDove/post/load-json-file-locally-using-pure-javascript
 function loadJSON(path, callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType('application/json');
@@ -28,7 +26,6 @@ function addBook(layoutRoot, book) {
         </div>
     </a>
     </div>
-    
     `;
 
     layoutRoot.appendChild(bookDiv);
